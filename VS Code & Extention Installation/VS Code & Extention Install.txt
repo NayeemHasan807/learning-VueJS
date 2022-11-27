@@ -1,0 +1,11 @@
+Visual Studio Code will be used as the IDE [Integrated Development Environment]
+
+Link to download VS Code:
+https://code.visualstudio.com/
+
+VS Code Extentions Needed For Vue Js:
+1. Vuter
+2. Vue 2 Snippers
+3. Vue.js extention pack
+4. Vue peek
+5. Mithril Emmet
