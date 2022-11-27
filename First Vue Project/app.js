@@ -32,7 +32,10 @@ new Vue({
         
         degree(){
             return "BSC.CSE"
-        }//ES6 way
-    }
+        },//ES6 way
 
+        getname(){
+            return this.name //by using this keyword we can send any value inside the data property.
+        }
+    }
 });

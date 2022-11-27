@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<title>El & Data Property</title>-->
-    <title>Method Property</title>
+    <!-- <title>Method Property</title> -->
+    <title>'This' Keyword</title>
     <script src="vue.js"></script> <!--if we download vue js-->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script> <!--if we use vue js cdn-->
 </head>
@@ -15,7 +16,8 @@
         <p><u>{{content}}</u></p>
     </div>
     <div id="myself">
-        <p>My name is : {{name}}</p> 
+        <!-- <p>My name is : {{name}}</p>  -->
+        <p>My name is : {{getname()}}</p>
         <p>I am a male : {{gender}} </p>
         <p>I can speak : {{language[0]}} & {{language[1]}}</p>
         <p>My program was : {{undergraduation.program}} and my faculty was : {{undergraduation.faculty}} </p>
