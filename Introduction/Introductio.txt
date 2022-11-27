@@ -1,0 +1,28 @@
+VueJs Front End Framework:
+
+Things Before Vue Js:
+1. HTML
+2. CSS
+3. Bootstrap
+4. Vanilla JavaScript ES6
+5. Vanilla JavaScript Projects
+
+Basics:
+1. Methods
+2. Directives
+3. Conditional rendering
+4. Arguments
+5. Lifecycle
+6. Others
+
+Node Js:
+1. Vue CLI [Command Line Interface]
+2. Libraries
+3. Animations
+4. Firebase
+5. Database
+
+Advanced:
+1. Routes
+2. VUEX
+3. Authentication
