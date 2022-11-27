@@ -19,10 +19,20 @@ new Vue({
             program: "CSE",
             faculty: "FST"
         }, //object
-        degree: ()=>{
+        /*degree: ()=>{
             return "BSC.CSE"
-        } //method
-
+        } //method //we wont use mathod in data property instade we will use method property*/
+    },
+    methods: {
+        //two ways to use method property one is the old way and another one is the ES6 way
+        
+        // degree: function(){
+        //     return "BSC.CSE"
+        // }//old way
+        
+        degree(){
+            return "BSC.CSE"
+        }//ES6 way
     }
 
 });
