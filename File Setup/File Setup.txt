@@ -1,0 +1,19 @@
+To work with Vue Js we can use development version download or we can use the direct CDN [Content Delivery Network]: 
+
+Vue Js Documentation and Installation Link:
+https://v2.vuejs.org/
+
+Vue Js development version CDN:
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+Then we need to create a directory to start working with vue js.
+Example-
+Directory: 
+	First Vue Project
+Containing three files: 
+	app.js
+	home.html
+	vue.js
+
+Then we need to add the directory to our IDE to start coding.
+In HTML page we need to add vue js source which can be downloaded or can be cdn. Then we have to add the source where we will do vue js code.
