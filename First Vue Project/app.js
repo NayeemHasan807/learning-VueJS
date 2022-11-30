@@ -113,3 +113,19 @@ new Vue({
         } //here name, age & country are the keys of user object
     }
 });
+
+/* Here we will see V-once builtin directives with settimeout functions*/
+new Vue({
+    el: "#once",
+    data: {
+        name: 'Nayeem'
+    },
+    methods: {
+        update(){
+            setTimeout(()=>{
+                this.name="Hasan"
+            },3000) //set the time for 3 seconds. After 3 seconds the name will change. This will happend once on the display
+            //but wont change the actual data.
+        }
+    }
+});

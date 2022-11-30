@@ -12,7 +12,8 @@
     <!-- <title>Directives: V-text & V-html</title> -->
     <!-- <title>Conditional Rendering</title> -->
     <!-- <title>Directives: V-show</title> -->
-    <title>Directives: V-for</title>
+    <!-- <title>Directives: V-for</title> -->
+    <title>Directives: V-for & settimeout function</title>
     <script src="vue.js"></script> <!--if we download vue js-->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script> <!--if we use vue js cdn-->
 </head>
@@ -127,6 +128,14 @@
         <p v-for="n in 5">
             {{n}}
         </p>
+    </div>
+
+    <hr>
+    <div id="once">
+        <h1>{{name}}</h1>
+        <h1 v-once>{{name}}</h1> <!-- All the names will be re-rendered after 3 seconds because of the settimeout function.
+        But we can stop re-rendering an element by using v-once-->
+        {{update()}}
     </div>
 
 
