@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<title>El & Data Property</title>-->
     <!-- <title>Method Property</title> -->
-    <title>'This' Keyword</title>
+    <!-- <title>'This' Keyword</title> -->
+    <title>Directives: V-bind</title>
     <script src="vue.js"></script> <!--if we download vue js-->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script> <!--if we use vue js cdn-->
 </head>
@@ -15,6 +16,7 @@
     <div id="title">
         <p><u>{{content}}</u></p>
     </div>
+
     <div id="myself">
         <!-- <p>My name is : {{name}}</p>  -->
         <p>My name is : {{getname()}}</p>
@@ -22,6 +24,13 @@
         <p>I can speak : {{language[0]}} & {{language[1]}}</p>
         <p>My program was : {{undergraduation.program}} and my faculty was : {{undergraduation.faculty}} </p>
         <p>My undergraduation degree is : {{degree()}} </p>
+    </div>
+
+    <div id="imageandhref"> <!-- v-bind -->
+        <!-- for the attributes of a html tag we dont have to use double curly braces -->
+        <!-- we have to dinamicaly bind the data with attributes using v-bind directives else it wont work -->
+        <img v-bind:src="src" v-bind:alt="alt" v-bind:height="heightandwidth" v-bind:width="heightandwidth"><br>
+        <a v-bind:href="linkedinlink">{{click}}</a>
     </div>
 
 <script src="app.js"></script> <!--added the file where we will do our code-->    
