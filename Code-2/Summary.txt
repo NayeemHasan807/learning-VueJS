@@ -1,0 +1,5 @@
+Click & Submit Argument and event modifire like left, right & middle etc. 
+This arguments is used to access the parameter passed to a function. It is only available within a function. To know about the client action we can send event argument as well.
+To use event argument we need to add a doller($) sign before it.
+JavaScript's interaction with HTML is handled through events that occur when the user or the browser manipulates a page. When the page loads, it is called an event. When the user clicks a button, that click too is an event. Other examples include events like pressing any key, closing a window, resizing a window, etc
+Without using event parameter to prevent input changing in the text field we can simply just add a modifire after submit named prevent.
