@@ -13,7 +13,7 @@ new Vue({
       getCoord(event){
         this.x = event.clientX;
         this.y = event.clientY;
-      },//event parameter can give clints mouse pointer axix
+      },//event parameter can give clints mouse pointer axis and other action informations
     },
 
 });
