@@ -1,0 +1,35 @@
+<!-- Click and MouseMove event using v-on directives. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Use: V-on</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+    <hr>
+    <div id="button">
+        <h1>{{name}}</h1>
+        <button v-on:click="updateName">CLick Me</button>
+        <div v-on:mousemove="getCoord" class="box">
+            <p>Hover Me</p> 
+        </div>
+        <p>X: {{x}}</p>
+        <p>Y: {{y}}</p>
+    </div> <!-- we have to use v-on and a colon(:) 
+        with click attribute of button element. 
+        Then the attribute click will call the method we want to call from js file.
+        We wont use parentheses after the method name. -->
+    <hr>
+<script src="app.js"></script> 
+</body>
+<style>
+    .box{
+        background-color: red;
+        width: 400px;
+        height: 400px;
+    };
+</style>
+</html>
