@@ -1,0 +1,2 @@
+In this directory named "First View Project" We learned el, data & method property, this keyword, directives like v-bind, v-text, v-html. 
+Then we learned conditional rendering using v-if, v-else-if, v-else. We learned v-show, v-for, v-once and settimeout function. No more work will be done in this directory.
