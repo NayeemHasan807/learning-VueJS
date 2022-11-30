@@ -100,3 +100,16 @@ new Vue({
         username: "Hasan",
     }
 });
+
+/* Here we will see V-for builtin directives and it parameters on paragraph tag or element */
+new Vue({
+    el: "#for",
+    data: {
+        cars: ['BMW','FORD','TOYOTA'],
+        user: {
+            name: 'Nayeem',
+            age: '24',
+            country: 'Bangladesh'
+        } //here name, age & country are the keys of user object
+    }
+});

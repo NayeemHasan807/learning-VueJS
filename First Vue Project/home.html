@@ -11,7 +11,8 @@
     <!-- <title>Directives: V-bind</title> -->
     <!-- <title>Directives: V-text & V-html</title> -->
     <!-- <title>Conditional Rendering</title> -->
-    <title>Directives: V-show</title>
+    <!-- <title>Directives: V-show</title> -->
+    <title>Directives: V-for</title>
     <script src="vue.js"></script> <!--if we download vue js-->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script> <!--if we use vue js cdn-->
 </head>
@@ -90,7 +91,6 @@
         <p v-else>
             You are not good to go.
         </p>
-
     </div>
 
     <hr>
@@ -100,6 +100,32 @@
         </p> 
         <p v-show="username!=='Nayeem'">
             Don't show on display  <!-- Because the user name is Hasan thats why displayed this -->
+        </p>
+    </div>
+
+    <hr>
+    <div id="for">
+        <h5><u>Car Names</u></h5>
+        <p v-for="car in cars"> <!-- Here cars are the array and car is a parameter-->
+            <!--<p>ABC</p> --><!-- for this paragraph element the v-for is broken-->
+            {{car}} <!-- we have to use the parameter using double curly braces after the v-for line. 
+                If any other elements come in between then it will nor work-->
+        </p>
+        <h5><u>Car Names with index</u></h5>
+        <p v-for="(car, index) in cars"> <!-- If we want to use multy parameters the we have to 
+            use parentheses and have to use comma between the parameters-->
+            {{index}}:{{car}}
+        </p>
+        <h5><u>User details</u></h5>
+        <p v-for="(value, index, key) in user"> <!-- user is an object-->
+            <!--{{index}}:{{key}}:{{value}}--> <!-- In the view page keys shows first though we used index ar first.
+            the reason is key parameter are the right parameter of the loop, so we have to print parameters from right to
+            left in order -->
+            {{key}}:{{index}}:{{value}}
+        </p>
+        <h5><u>Show Numbers</u></h5>
+        <p v-for="n in 5">
+            {{n}}
         </p>
     </div>
 
