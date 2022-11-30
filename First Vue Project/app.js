@@ -41,9 +41,9 @@ new Vue({
 });
 
 /* Now we will see the works of directives
-there are two types of directives one is built-in and another is custom
-here we will see V-bind builtin directives on image element*/
+there are two types of directives one is built-in and another is custom */
 
+/*Here we will see V-bind builtin directives on image element */
 new Vue({
     el: "#imageandhref",
     data: {
@@ -52,5 +52,14 @@ new Vue({
         heightandwidth: "300",
         linkedinlink: "https://www.linkedin.com/in/nayeemhasan807/",
         click: "CLick the link to visit my Linkedin profile"
+    }
+});
+
+/* Here we will see V-text & V-html builtin directives on paragraph tag or element */
+new Vue({
+    el: "#paragraph",
+    data: {
+        text: "We can use the value from js file to get text in paragraph tag or element useing double curly braces but we wont do that. Instade we will use v-text directives",
+        html: "<i><strong><u>Instade of writing html script in html file we can send it from js file using v-html attributes.</u></strong></i>"
     }
 });

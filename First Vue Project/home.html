@@ -8,7 +8,8 @@
     <!--<title>El & Data Property</title>-->
     <!-- <title>Method Property</title> -->
     <!-- <title>'This' Keyword</title> -->
-    <title>Directives: V-bind</title>
+    <!-- <title>Directives: V-bind</title> -->
+    <title>Directives: V-text & V-html</title>
     <script src="vue.js"></script> <!--if we download vue js-->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script> <!--if we use vue js cdn-->
 </head>
@@ -16,7 +17,7 @@
     <div id="title">
         <p><u>{{content}}</u></p>
     </div>
-
+    <hr>
     <div id="myself">
         <!-- <p>My name is : {{name}}</p>  -->
         <p>My name is : {{getname()}}</p>
@@ -25,13 +26,21 @@
         <p>My program was : {{undergraduation.program}} and my faculty was : {{undergraduation.faculty}} </p>
         <p>My undergraduation degree is : {{degree()}} </p>
     </div>
-
+    <hr>
     <div id="imageandhref"> <!-- v-bind -->
         <!-- for the attributes of a html tag we dont have to use double curly braces -->
         <!-- we have to dinamicaly bind the data with attributes using v-bind directives else it wont work -->
         <img v-bind:src="src" v-bind:alt="alt" v-bind:height="heightandwidth" v-bind:width="heightandwidth"><br>
         <a v-bind:href="linkedinlink">{{click}}</a>
     </div>
+    <hr>
+    <div id="paragraph"> <!-- v-text & v-html -->
+        <!-- <p>{{text}}</p> --> <!-- get the value using double curly braces -->
+        <p v-text="text"></p> <!-- get the value using v-text directives -->
+        <!-- <p><i><strong><u>Instade of writing html code in html file we can send it from js file using v-html attributes.</u></strong></i></p>--> <!--used html script --> 
+        <p v-html="html"></p> <!-- get the html code using v-html directives -->
+    </div>
+    <hr>
 
 <script src="app.js"></script> <!--added the file where we will do our code-->    
 </body>
