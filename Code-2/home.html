@@ -1,0 +1,34 @@
+<!-- Click & Submit Argument and event modifire like left, right etc-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argument & Modifier</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+    <hr>
+    <div id="button">
+        <h1>{{name}}</h1>
+        <button v-on:click="updateName('Nayeem Hasan Moon', $event)">Any CLick</button>
+        <!-- This arguments is used to access the parameter passed to a function.
+        It is only available within a function. To know about the client action we can send event argument as well.
+        To use event argument we need to add a doller($) sign before it -->
+        <button v-on:click.right="updateName('Nayeem Hasan Moon', $event)">Only Right CLick</button>
+        <button v-on:click.left="updateName('Nayeem Hasan Moon', $event)">Only Left CLick</button>
+        <button v-on:click.middle="updateName('Nayeem Hasan Moon', $event)">Only Middle CLick</button>
+        <!-- Modifire are used after the event using Dot(.). Dependion on that modifire that action performs -->
+        <br><br><br>
+        <form v-on:submit.prevent="handleForm">
+            <input type="text">
+            <button type="submit">Submit</button>
+        </form>
+        <!-- Without using event parameter to prevent input changing in the text field we can simply
+        just add a modifire aster submit named prevent -->
+    </div>
+    <hr>
+<script src="app.js"></script> 
+</body>
+</html>
