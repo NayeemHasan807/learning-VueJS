@@ -63,3 +63,28 @@ new Vue({
         html: "<i><strong><u>Instade of writing html script in html file we can send it from js file using v-html attributes.</u></strong></i>"
     }
 });
+
+/* Here we will see how to use conditional rendering. How to work with if else using vue js*/
+new Vue({
+    el: "#ifelse",
+    data: {
+        username: "Nayeem",
+        //userage: "24", //to check in html the condition is false against the requireduserage
+        //userage: "28", //to check in html the condition is true against the requireduserage
+        userage: "24", 
+        requireduserage: "26" //we are checking the age against this requireduserage
+    },
+    methods: {
+        checkuser(){
+            return "Hasan";
+        },
+        changeuser(){
+            return this.username==="Nayeem" ? true : false 
+            //The conditional (ternary) operator is the only JavaScript operator that takes three operands: 
+            //a condition followed by a question mark ( ? ), 
+            //then an expression to execute if the condition is truthy followed by a colon ( : ), 
+            //and finally the expression to execute if the condition is falsy
+        }
+    }
+    
+});

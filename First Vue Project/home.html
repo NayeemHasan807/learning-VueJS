@@ -9,14 +9,17 @@
     <!-- <title>Method Property</title> -->
     <!-- <title>'This' Keyword</title> -->
     <!-- <title>Directives: V-bind</title> -->
-    <title>Directives: V-text & V-html</title>
+    <!-- <title>Directives: V-text & V-html</title> -->
+    <title>Conditional Rendering</title>
     <script src="vue.js"></script> <!--if we download vue js-->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script> <!--if we use vue js cdn-->
 </head>
 <body>
+    <hr>
     <div id="title">
         <p><u>{{content}}</u></p>
     </div>
+
     <hr>
     <div id="myself">
         <!-- <p>My name is : {{name}}</p>  -->
@@ -26,6 +29,7 @@
         <p>My program was : {{undergraduation.program}} and my faculty was : {{undergraduation.faculty}} </p>
         <p>My undergraduation degree is : {{degree()}} </p>
     </div>
+
     <hr>
     <div id="imageandhref"> <!-- v-bind -->
         <!-- for the attributes of a html tag we dont have to use double curly braces -->
@@ -33,14 +37,60 @@
         <img v-bind:src="src" v-bind:alt="alt" v-bind:height="heightandwidth" v-bind:width="heightandwidth"><br>
         <a v-bind:href="linkedinlink">{{click}}</a>
     </div>
+
     <hr>
     <div id="paragraph"> <!-- v-text & v-html -->
-        <!-- <p>{{text}}</p> --> <!-- get the value using double curly braces -->
+        <!-- 
+        <p>{{text}}</p> 
+        --> <!-- get the value using double curly braces -->
         <p v-text="text"></p> <!-- get the value using v-text directives -->
-        <!-- <p><i><strong><u>Instade of writing html code in html file we can send it from js file using v-html attributes.</u></strong></i></p>--> <!--used html script --> 
+        <!-- 
+        <p><i><strong><u>Instade of writing html code in html file we can send it from js file using v-html attributes.</u></strong></i>
+        </p>
+        --> <!--used html script --> 
         <p v-html="html"></p> <!-- get the html code using v-html directives -->
     </div>
+    
     <hr>
+    <div id="ifelse"> <!-- Conditional Rendering using vue js-->
+        <!-- in between conditinal rendering if we use other tags or elements then the condition will break and it will give a error -->
+        
+        <!-- 
+        <p v-if="userage >= requireduserage">
+            You are good to go. 
+        </p> 
+        --> <!--this wont show because the condition is false-->
+        
+        <!-- 
+        <p v-if="userage >= requireduserage">
+            You are good to go. 
+        </p> 
+        --><!--this will show because the condition is true -->
+        
+        <p v-if="changeuser()">
+            No need to change the user. The user is authentic. 
+        </p> 
+        <!--this will show because the condition is true -->
+        
+        <p v-if="userage >= requireduserage">
+            You are good to go.
+        </p>
+        <!-- 
+        <h1>Hasan</h1>  
+        --><!--this will break the conditional rendering-->
+        <!-- 
+        <p v-else-if="username==='Nayeem'">
+            User is authentic.
+        </p> 
+        -->
+        <p v-else-if="username===checkuser()"> <!--we can also use methods property-->
+            User is authentic.
+        </p>
+        <p v-else>
+            You are not good to go.
+        </p>
+
+    </div>
 
 <script src="app.js"></script> <!--added the file where we will do our code-->    
 </body>
