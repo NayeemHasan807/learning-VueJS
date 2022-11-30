@@ -10,7 +10,8 @@
     <!-- <title>'This' Keyword</title> -->
     <!-- <title>Directives: V-bind</title> -->
     <!-- <title>Directives: V-text & V-html</title> -->
-    <title>Conditional Rendering</title>
+    <!-- <title>Conditional Rendering</title> -->
+    <title>Directives: V-show</title>
     <script src="vue.js"></script> <!--if we download vue js-->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script> <!--if we use vue js cdn-->
 </head>
@@ -91,6 +92,17 @@
         </p>
 
     </div>
+
+    <hr>
+    <div id="show">
+        <p v-show="username==='Nayeem'">
+            Show on display <!-- This portion is also rendered but hidden on the display because the condition is not true -->
+        </p> 
+        <p v-show="username!=='Nayeem'">
+            Don't show on display  <!-- Because the user name is Hasan thats why displayed this -->
+        </p>
+    </div>
+
 
 <script src="app.js"></script> <!--added the file where we will do our code-->    
 </body>

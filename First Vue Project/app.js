@@ -88,3 +88,15 @@ new Vue({
     }
     
 });
+
+/* Here we will see V-show builtin directives on paragraph tag or element */
+/* When a web page is loaded, the browser creates a [DOM] Document Object Model of the page. 
+Basically coditional rendering directives and v-show works same but the difference is in conditional rendering directives
+DOM only render the condition which is true. On the other side if we use v-show directives the DOM will render all the 
+conditions but display only the condition which is truse*/
+new Vue({
+    el: "#show",
+    data: {
+        username: "Hasan",
+    }
+});
