@@ -30,7 +30,7 @@ const i3 = new Vue({
         name: 'Nayeem'
     },
     //template: `<p>My name is {{name}}</p>`, 
-    //This is a new property where we can write our html using Backtag(``). 
+    //This is a new property named template where we can write our html using Backtag(``). 
     template: temp,
     //We can also use a variable to write our html if its too large. Then just simpally call the variable.
 });
@@ -41,7 +41,7 @@ setTimeout(()=>{
 
 /*Now we will see how to use basic components.
 Inside the component we cant use the data as we used in the instance. In instance we used data as an object.
-But in component we have to use the data as a function and it will return the value. Then we will use the template.
+But in component we have to use the data as a function and it will return object. Then we will use the template.
 In html file we just have to use the name of the component as a tag apply it.
 Main advantage of the component is we can re-use the component as many time as we want. It will increase the 
 flexibility and save our time.*/
@@ -54,6 +54,7 @@ Vue.component('paragraph',{
     template: `<p>My undergraduation degree is : {{degree}}</p>`
 });
 
+/*Inside the component we wont use any el property.*/
 new Vue({
     el: '#i4',
 });
