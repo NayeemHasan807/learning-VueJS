@@ -1,6 +1,7 @@
 <!-- Use of V-model in form to bind input data with objects in data property of js.
      Which is also called two way bindings -->
 <!-- Work of computed property and the difference between merhods and computed property -->
+<!-- Use of Shorthand which is quiet handy when a huge lines of code need to be writen -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,13 +9,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <title>V-model or Two way bindings</title> -->
-    <title>Computed Property</title>
+    <!-- <title>Computed Property</title> -->
+    <title> Shorthand </title>
     <script src="vue.js"></script>
 </head>
 <body>
     <hr>
     <div id="form">
-        <form v-on:submit.prevent="handleForm">
+        <form @submit.prevent="handleForm">
             <label for="firstName">First Name:</label>
             <input type="text" v-model="formData.firstName"><br><br>
             <label for="lastName">Last Name:</label>
@@ -29,8 +31,11 @@
     <hr>
     <div id="cp">
         <p v-text="text"><b><u></u></b></p>
-        <button v-on:click="a++">Add A</button>
-        <button v-on:click="b++">Add B</button>
+        <!-- <button v-on:click="a++">Add A</button>
+        <button v-on:click="b++">Add B</button> -->
+        <!-- without using shorthand -->
+        <button @click="a++">Add A</button>
+        <button @click="b++">Add B</button>
         <br><br>
         <p>A : {{a}}</p>
         <p>B : {{b}}</p>
@@ -41,6 +46,16 @@
         <p>Salary + B : {{addToB}}</p>
         <!-- The two function above are called from computed property -->
         <!-- When we will call function from computed property we wont use parentheses at the end of the function -->
+        <hr>
+        <h5><u>Learn Vue Js From The Below Link</u></h5>
+        <!-- <a v-bind:href="link">VueJS</a> -->
+        <!-- without using shorthand -->
+        <a :href="link">VueJS</a>
+        <!-- Useing the shorthand we can use the short wat to write directives
+        Like for v-on:any_event we can use @anyevents
+             for v-bind:any_src we can use :any_source
+             for v-slot we can use # 
+        Only this three directives has shorthand other directives dont have any short hands-->
     </div>
     <hr>
 <script src="app.js"></script> 

@@ -18,6 +18,7 @@ new Vue({
 new Vue({
     el: "#cp",
     data: {
+        link: 'https://v2.vuejs.org/',
         text: 'Using computed property instade of methods property',
         a: 0,
         b: 0,
