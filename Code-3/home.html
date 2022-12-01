@@ -1,0 +1,30 @@
+<!-- Use of V-model in form to bind input data with objects in data property of js.
+     Which is also called two way bindings -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-model or Two way bindings</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+    <hr>
+    <div id="form">
+        <form v-on:submit.prevent="handleForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" v-model="formData.firstName"><br><br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" v-model="formData.lastName"><br><br>
+            <button type="submit">Submit</button>
+        </form>
+         <!-- When the submit button is pressed the event submit will occure. This will call the function handleform.
+            Then the code will run inside the handleform function. Here we are dynamically binding the text fields
+            with the object written in data property of js file. This is also called the two-way-bindings.
+          -->
+    </div>
+    <hr>
+<script src="app.js"></script> 
+</body>
+</html>
