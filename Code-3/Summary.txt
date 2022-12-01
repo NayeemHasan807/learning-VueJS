@@ -1,0 +1,17 @@
+1. Use of V-model in form to bind input data with objects in data property of js.
+	Here we are dynamically binding the text fields with the object written in data property of js file. This is also called the two way bindings.
+
+2. Work of computed property and the difference between merhods and computed property.
+	When we will call function from computed property we wont use parentheses at the end of the function.
+	We had seen using console log that the DOM render all the functions in methods property
+    whenever a function is called. Because methods property don't know how to render a perticular function.
+    So, In big projects when there is a lot of big functions, it will be a huge waste of time is we use 
+    the methods property and the DOM start rendering all the functions when a perticular function is called.
+    To prevent this we use computed property because computed property only render the function which is called.
+
+3. Use of Shorthand which is quiet handy when a huge lines of code need to be writen.
+Useing the shorthand we can use the short way to write directives
+    Like for v-on:any_event we can use @anyevents
+         for v-bind:any_src we can use :any_source
+         for v-slot we can use # 
+    Only this three directives has shorthand other directives dont have any short hands
