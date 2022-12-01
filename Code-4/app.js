@@ -39,3 +39,21 @@ setTimeout(()=>{
     i3.$mount('#i3');
 },3000)
 
+/*Now we will see how to use basic components.
+Inside the component we cant use the data as we used in the instance. In instance we used data as an object.
+But in component we have to use the data as a function and it will return the value. Then we will use the template.
+In html file we just have to use the name of the component as a tag apply it.
+Main advantage of the component is we can re-use the component as many time as we want. It will increase the 
+flexibility and save our time.*/
+Vue.component('paragraph',{
+    data(){
+        return{
+            degree: 'BSc.CSE'
+        }
+    },
+    template: `<p>My undergraduation degree is : {{degree}}</p>`
+});
+
+new Vue({
+    el: '#i4',
+});
