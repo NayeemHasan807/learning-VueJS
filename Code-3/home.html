@@ -1,12 +1,14 @@
 <!-- Use of V-model in form to bind input data with objects in data property of js.
      Which is also called two way bindings -->
+<!-- Work of computed property and the difference between merhods and computed property -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>V-model or Two way bindings</title>
+    <!-- <title>V-model or Two way bindings</title> -->
+    <title>Computed Property</title>
     <script src="vue.js"></script>
 </head>
 <body>
@@ -23,6 +25,22 @@
             Then the code will run inside the handleform function. Here we are dynamically binding the text fields
             with the object written in data property of js file. This is also called the two-way-bindings.
           -->
+    </div>
+    <hr>
+    <div id="cp">
+        <p v-text="text"><b><u></u></b></p>
+        <button v-on:click="a++">Add A</button>
+        <button v-on:click="b++">Add B</button>
+        <br><br>
+        <p>A : {{a}}</p>
+        <p>B : {{b}}</p>
+        <!-- <p>Salary + A : {{addToA()}}</p> 
+        <p>Salary + B : {{addToB()}}</p> -->
+        <!-- The two function above are called from method property -->
+        <p>Salary + A : {{addToA}}</p> 
+        <p>Salary + B : {{addToB}}</p>
+        <!-- The two function above are called from computed property -->
+        <!-- When we will call function from computed property we wont use parentheses at the end of the function -->
     </div>
     <hr>
 <script src="app.js"></script> 
