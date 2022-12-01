@@ -1,0 +1,32 @@
+Before Installing Vue CLI(command-line interface):
+
+    1. Node JS(NPM)
+    2. Yarn Package Manager
+    3. Git Bash
+    4. Integrate Bash Terminal IN VS Code
+
+To Installing The Vue CLI We can either use Yarn or NodeJS:
+
+    npm install -g @vue/cli
+    # OR
+    yarn global add @vue/cli
+
+To Check The Version:
+
+    vue --version
+
+To Update The Vue CLI:
+
+    npm update -g @vue/cli
+    # OR
+    yarn global upgrade --latest @vue/cli
+
+To Create A Project:
+
+    vue create directory name
+    or if inside the project directory then
+    vue create .
+
+All the other necessary documentation are inside this link:
+
+    https://cli.vuejs.org/
