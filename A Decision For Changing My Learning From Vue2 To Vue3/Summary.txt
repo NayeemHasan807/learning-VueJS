@@ -1,0 +1,27 @@
+Why I started Vue Js:
+Vue is lightweight and easy to write. 
+Owing to its use of components and familiar templating syntax, migrating or integrating into 
+current projects to Vue. js is smoother and faster. 
+Hence, Vue is an excellent choice for start-ups but can be utilized in large-scale apps.
+I found Vue facinating and I started learing it.
+
+The Reason Why I Am Changing My Learning Module:
+Vue was first released the following February, in 2014. In October 27, 2015 the Vue version 1.0 released.
+Then in September 30, 2016 the Vue version 2.0 released. After around 4 years in September 18, 2020 Vue version 3.0 released.
+The latest vue version is Vue 3.2 which was released in August 5, 2021.
+The source from where I started learing Vue is https://v2.vuejs.org/v2/guide/index.html. 
+This is the documentation of Vue2. Which is backdated and will vanish in the end of 2023. 
+If I continue learning Vue2 then in the long run it won't help me much. Till now I just learned the 
+basics of Vue2 and strated learing Vue Cli. Now I want to shift to Vue3.
+Vue3 is said to be faster, smaller, more maintainable and easier to target natives compared to Vue2.
+It is now officially the default version of Vue.js. 
+By using it, I will be future-proofing my skills to stay relevant with this cutting-edge technology.
+
+Things I Need To Do Right Now:
+From now on I have to follow Vue3 documentation from https://vuejs.org/.
+I will also follow there official courses on https://www.vuemastery.com/courses
+Most of the basics of Vue2 and Vue3 are same. 
+Some new syntax, features, functions and rules may added and some may changed. 
+I will go through all the basics again from Vue3 documentation.
+It will take some time but okay for me. I will try my best to learn Vue3 from basics to advance level. 
+No matter how long it may takes I will finish it.
