@@ -1,4 +1,4 @@
-VueJs Front End Framework:
+VueJs 2.0 or Vue2 Front End Framework:
 
 Things Before Vue Js:
 1. HTML

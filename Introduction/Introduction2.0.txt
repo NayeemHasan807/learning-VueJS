@@ -1,0 +1,18 @@
+VueJs 3.0 or Vue3 Front End Framework:
+
+Things That We Are Going To Learn:
+1. Basic Core concepts with cdn
+2. Behind The Scene
+3. Components and some advanced concepts
+4. Vue Cli
+5. Working with forms
+6. Sending HTTP requests
+7. Routing with vue route
+8. Transition Animations
+9. State Management with vuex
+10. Vue Js Authentication
+11. Deplying vue app
+12. Composition API [Helpful on large projects]
+13. Mixin
+14. Migration from Vue2 to Vue3
+15. Whats Next
