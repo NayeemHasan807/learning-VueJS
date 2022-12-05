@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recapping JavaScript & JSON</title>
+  </head>
+  <body>
+    <script>
+      //Recapping JavaScript
+      //console.log(window); //window is a builtin javascript object to manipulate html DOM
+      //window.alert("Hey You Are Inside The UI"); //alart is a builtin function inside window object
+      //alert("Hey You Are Inside The UI"); //No need to write ["window."] to use the materials which are inside window object
+
+      // function start(){
+      //     console.log("Started");
+      // }
+      // function process(){
+      //     console.log("Processing");
+      // }
+      // function end(){
+      //     console.log("Ended");
+      // }
+      // start();
+      // process();
+      // end();
+      //This three functions will print one after another on the console.
+
+      //   function start() {
+      //     console.log("Started");
+      //   }
+      //   function process() {
+      //     setTimeout(() => {
+      //       console.log("Processing");
+      //     }, 100);
+      //   }
+      //   function end() {
+      //     console.log("Ended");
+      //   }
+      //   start();
+      //   process();
+      //   end();
+      //Now on the console Started will be printed, then ended will be printed and at last processing will be printed
+      //If this were any other language then this won't happended.
+      //JavaScript can run multiple lines of code simultaneously by default.
+      //Other language run line by line codes by default. On other language we use threads to execute multiple functions.
+
+      // function start() {
+      //   console.log("Started");
+      // }
+      // function process(callback) {
+      //   setTimeout(() => {
+      //     console.log("Processing");
+      //     callback();
+      //   }, 100);
+      // }
+      // function end() {
+      //   console.log("Ended");
+      // }
+      // start();
+      // process(()=>{
+      //   end();
+      // });
+      //For JavaScript we use callback function to make the functions work one after another
+
+      // Recapping JSON
+      //JSON is an object defined using curly braces and can contain verious amout of nested data inside it
+      var myJson = {
+        name:"Nayeem Hasan",
+        age:"24",
+        skills:["HTML","CSS","BootStrap","Vanela JavaScript","jQuery","C/C++","Java","C#","PHP"],
+        frameworks:[
+          {name:"ExpressJS",language:"JavaScript",uses:"Back-End Development"},
+          {name:"Laravel",language:"PHP",uses:"Back-End Development"},
+          {name:"Asp.Net",language:"C#",uses:"Back-End Development"},
+        ]
+      };
+      console.log(myJson.name);
+      console.log(myJson.skills);
+      console.log(myJson.frameworks[1].language);
+    </script>
+  </body>
+</html>
